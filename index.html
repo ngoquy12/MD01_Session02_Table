@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Lưu ý: Khi ô input không có type thì mặc định type của ô input dấy là text -->
+    <!-- Phím tắt crtl + l để thay chọn tất cả các tưf giống nhau -->
+    <h3>Create Account</h3>
+    <label for="">First name*:</label><br />
+    <input type="text" /><br />
+
+    <label for="">Last name*:</label><br />
+    <input type="text" /><br />
+
+    <label for="">Password*:</label><br />
+    <input type="password" /><br />
+
+    <label for="">Gender*:</label><br />
+    <input name="gender1" type="radio" />Male
+    <input name="gender1" type="radio" /> Female
+
+    <label for="">Sở thích</label>
+    <input type="checkbox" name="" id="" /><br />
+
+    <label for="">Thành phố</label>
+    <select name="" id="">
+      <option value="">-- Nhập tên thành phố --</option>
+      <option value="">Thành phố HCM</option>
+      <option value="">Hà Nội</option>
+      <option value="">Đà Nẵng</option>
+    </select>
+    <!-- Combobox -->
+    <label for="">Tiến độ</label>
+    <input type="range" /><br />
+
+    <label for="">Ngày sinh</label>
+    <input type="date" />
+
+    <label for="">Ảnh đại diện</label>
+    <input type="file" /><br />
+
+    <label for="">Địa chỉ</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <input type="button" value="Đăng nhập" />
+    <label for="">Tuổi</label>
+    <input type="number" /><br />
+
+    <!-- thead : table head -->
+    <!-- Sử dụng cú pháp để tạo ra 5 thẻ th nhanh hơn: th*5 + enter -->
+    <table border="1">
+      <caption>
+        LÀM VIỆC VỚI BẢNG
+      </caption>
+      <!-- Phần tiêu đề -->
+      <thead>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Giới tính</th>
+        <th>Ngày sinh</th>
+        <th>Tuổi</th>
+      </thead>
+      <!-- Phần dữ liệu -->
+      <tbody>
+        <!-- tr: table row -->
+        <!-- th: table head -->
+        <!-- td: table data -->
+        <tr>
+          <td>1</td>
+          <td>Rikkei Academy</td>
+          <td>Nam</td>
+          <td>20/08/2022</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rikkei Academy</td>
+          <td>Nam</td>
+          <td>20/08/2022</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rikkei Academy</td>
+          <td>Nam</td>
+          <td>20/08/2022</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rikkei Academy</td>
+          <td>Nam</td>
+          <td>20/08/2022</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rikkei Academy</td>
+          <td>Nam</td>
+          <td>20/08/2022</td>
+          <td>22</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Tạo bảng doanh thu -->
+    <table border="1">
+      <!-- Phần tiêu đề -->
+      <thead>
+        <tr>
+          <th>Tháng</th>
+          <th>Doanh thu</th>
+        </tr>
+      </thead>
+      <!-- Phần dữ liệu -->
+      <tbody>
+        <!-- Dữ liệu -->
+        <tr>
+          <td>2</td>
+          <td>$600</td>
+        </tr>
+        <!-- Dữ liệu -->
+        <tr>
+          <td>3</td>
+          <td>$800</td>
+        </tr>
+        <!-- Dữ liệu -->
+        <tr>
+          <td colspan="2">Doanh số: $10000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Gộp cột -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Quý</th>
+          <th>Tháng</th>
+          <th>Doanh thu</th>
+        </tr>
+      </thead>
+      <!-- Phần dữ liệu -->
+      <tbody>
+        <tr>
+          <td rowspan="3">Một</td>
+          <td>Một</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Hai</td>
+          <td>$80</td>
+        </tr>
+        <tr>
+          <td>Tháng 3</td>
+          <td>$80</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
